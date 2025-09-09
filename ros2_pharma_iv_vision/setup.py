@@ -1,9 +1,6 @@
 """
 Setup configuration for the ROS2 Pharmaceutical IV Bag Vision System.
 
-This package provides a comprehensive ROS2-based architecture for intelligent IV bag 
-inspection with contamination-aware robotic manipulation and adaptive learning capabilities.
-
 Copyright 2025 inte-R-action Team
 
 Licensed under the Apache License, Version 2.0 (the "License");
@@ -62,19 +59,7 @@ setup(
     long_description="""
     This package implements a sophisticated ROS2-based system for pharmaceutical quality control,
     featuring:
-    
-    - 96.2% contamination detection accuracy using EfficientDet + Transformer tracking
-    - Dual SO-ARM101 robot integration with ACT policies for adaptive manipulation
-    - Real-time contamination-aware workflow with 30 FPS processing
-    - Imitation learning with 94.7% expert performance retention
-    - Distributed node architecture for scalable pharmaceutical automation
-    - EU GMP Annex 1 compliance framework for sterile manufacturing
-    
-    Key Components:
-    - Vision System Node: Real-time contamination detection and tracking
-    - Robotic Control Nodes: Adaptive loading/unloading with contamination awareness
-    - Performance Monitoring: Comprehensive metrics and visualization
-    - Imitation Learning: Leader-follower architecture for continuous improvement
+
     """,
     license='Apache-2.0',
     tests_require=['pytest'],
