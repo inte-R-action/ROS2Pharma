@@ -10,7 +10,7 @@
 
 This system implements a sophisticated pharmaceutical quality control solution with:
 
-- **96.2% contamination detection accuracy** using EfficientDet + Transformer tracking
+- **96.2% contamination detection accuracy** using EfficientDet
 - TBC
 
 ## 🏗️ System Architecture
