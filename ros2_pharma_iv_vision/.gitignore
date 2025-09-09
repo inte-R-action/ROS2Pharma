@@ -1,0 +1,334 @@
+# ROS2 Pharmaceutical IV Bag Vision System - .gitignore
+# Comprehensive gitignore for ROS2, Python, and pharmaceutical applications
+
+# =============================================================================
+# ROS2 Specific
+# =============================================================================
+
+# Build directories
+build/
+install/
+log/
+
+# ROS2 workspace files
+*.workspace
+
+# Colcon build artifacts
+.colcon_build/
+.colcon_install/
+.colcon_test/
+
+# =============================================================================
+# Python
+# =============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# =============================================================================
+# Machine Learning / AI Models
+# =============================================================================
+
+# Large model files (use Git LFS for these)
+*.pth
+*.pt
+*.ckpt
+*.h5
+*.pkl
+*.joblib
+*.model
+*.weights
+*.onnx
+*.tflite
+*.pb
+
+# Training data and datasets (usually too large for git)
+data/
+datasets/
+training_data/
+validation_data/
+test_data/
+
+# Experiment results
+experiments/
+runs/
+logs/
+tensorboard_logs/
+wandb/
+mlruns/
+
+# =============================================================================
+# Computer Vision / Image Processing
+# =============================================================================
+
+# Image and video files
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.tif
+*.raw
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+
+# Camera calibration files (sensitive data)
+calibration_data/
+camera_params/
+
+# Vision processing results
+vision_results/
+detection_results/
+tracking_results/
+analysis_output/
+
+# =============================================================================
+# Pharmaceutical / Medical Data
+# =============================================================================
+
+# Patient data or sensitive medical information
+patient_data/
+medical_records/
+phi_data/  # Protected Health Information
+
+# Validation and compliance records (may contain sensitive info)
+validation_records/
+audit_reports/
+compliance_data/
+
+# Quality control data
+qc_data/
+quality_records/
+batch_records/
+
+# =============================================================================
+# Robotics / Hardware
+# =============================================================================
+
+# Robot configuration files with sensitive parameters
+robot_configs/
+calibration_configs/
+safety_configs/
+
+# Hardware-specific files
+*.urdf.xacro
+device_configs/
+
+# Sensor data
+sensor_logs/
+imu_data/
+force_data/
+position_data/
+
+# =============================================================================
+# Development Tools
+# =============================================================================
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.out
+
+# =============================================================================
+# Documentation Build
+# =============================================================================
+
+# Sphinx documentation
+docs/_build/
+docs/build/
+
+# MkDocs
+site/
+
+# =============================================================================
+# Pharmaceutical Specific
+# =============================================================================
+
+# Regulatory submission files (often confidential)
+regulatory_submissions/
+fda_submissions/
+ema_submissions/
+
+# Proprietary pharmaceutical protocols
+protocols/
+sops/  # Standard Operating Procedures
+validation_protocols/
+
+# Manufacturing data
+manufacturing_data/
+production_logs/
+batch_data/
+
+# =============================================================================
+# Security & Credentials
+# =============================================================================
+
+# Environment variables with secrets
+.env.local
+.env.production
+.env.staging
+
+# API keys and tokens
+*.key
+*.pem
+*.crt
+*.p12
+secrets/
+credentials/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# =============================================================================
+# Performance & Profiling
+# =============================================================================
+
+# Profiling results
+profile_results/
+*.prof
+*.profile
+
+# Memory dumps
+*.dump
+core.*
+
+# =============================================================================
+# Backup Files
+# =============================================================================
+
+# Backup files
+*.bak
+*.backup
+*.old
+*_backup.*
+*_old.*
+
+# =============================================================================
+# Custom Project Specific
+# =============================================================================
+
+# IV bag analysis results
+iv_bag_results/
+contamination_analysis/
+sorting_results/
+
+# Performance benchmarks
+benchmarks/
+performance_data/
+
+# Custom model checkpoints
+checkpoints/
+saved_models/
+
+# Configuration overrides
+local_config/
+dev_config/
+
+# Test results and coverage
+test_results/
+coverage_reports/
+
+# Documentation drafts
+draft_docs/
+internal_docs/
+
+# =============================================================================
+# Git LFS (Large File Storage) - Track these file types
+# =============================================================================
+
+# Add these to .gitattributes file:
+# *.pth filter=lfs diff=lfs merge=lfs -text
+# *.pt filter=lfs diff=lfs merge=lfs -text
+# *.h5 filter=lfs diff=lfs merge=lfs -text
+# *.onnx filter=lfs diff=lfs merge=lfs -text
+# *.mp4 filter=lfs diff=lfs merge=lfs -text

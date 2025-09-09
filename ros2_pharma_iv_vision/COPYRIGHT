@@ -1,0 +1,71 @@
+ROS2 Pharmaceutical IV Bag Vision System
+=====================================
+
+Copyright (C) 2025 inte-R-action Team. All rights reserved.
+
+Primary Authors and Copyright Holders:
+- inte-R-action Team
+
+This software and associated documentation files (the "Software") are protected 
+by copyright law and international treaties. The Software is licensed under the 
+Apache License, Version 2.0 (the "License").
+
+You may not use the Software except in compliance with the License. You may 
+obtain a copy of the License at:
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed 
+under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
+CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+specific language governing permissions and limitations under the License.
+
+PHARMACEUTICAL APPLICATION DISCLAIMER:
+=====================================
+
+This software is designed for research and development in pharmaceutical quality 
+control applications. Use in production pharmaceutical manufacturing environments 
+requires:
+
+1. Compliance with applicable pharmaceutical regulations (EU GMP, FDA, etc.)
+2. Validation according to pharmaceutical quality standards
+3. Risk assessment and safety validation
+4. Professional oversight by qualified pharmaceutical professionals
+
+The copyright holders and contributors provide no warranties regarding the 
+suitability of this software for production pharmaceutical applications and 
+disclaim all liability for any pharmaceutical, medical, or safety-related 
+consequences of its use.
+
+TRADEMARK NOTICE:
+================
+
+"inte-R-action" and associated logos are trademarks of the inte-R-action Team. 
+This License does not grant permission to use these trademarks except as required 
+for reasonable and customary use in describing the origin of the Software.
+
+PATENT NOTICE:
+=============
+
+This Software may be subject to patent rights. The Apache License 2.0 includes 
+an express grant of patent rights from contributors to users. If you institute 
+patent litigation against any entity alleging that the Software constitutes 
+patent infringement, any patent licenses granted to you under this License 
+shall terminate.
+
+THIRD-PARTY COMPONENTS:
+======================
+
+This Software incorporates third-party open-source software components. Each 
+component is subject to its own license terms. See the NOTICE file for detailed 
+attribution and licensing information for all third-party components.
+
+EXPORT CONTROL:
+==============
+
+This Software may be subject to export control laws and regulations. Users are 
+responsible for compliance with applicable export control requirements.
+
+For questions regarding copyright, licensing, or usage rights, please contact:
+Email: contact@inte-r-action.com
+GitHub: https://github.com/inte-R-action/ROS2Pharma

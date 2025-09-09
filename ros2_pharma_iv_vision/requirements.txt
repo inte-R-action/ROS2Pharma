@@ -1,0 +1,85 @@
+# ROS2 Pharmaceutical IV Bag Vision System Requirements
+# Core ROS2 and Python dependencies
+
+# Computer Vision and AI Libraries
+opencv-python>=4.5.0
+torch>=1.9.0
+torchvision>=0.10.0
+numpy>=1.21.0
+pandas>=1.3.0
+matplotlib>=3.4.0
+scikit-learn>=1.0.0
+scipy>=1.7.0
+
+# Deep Learning and Transformers
+transformers>=4.20.0
+timm>=0.6.0
+accelerate>=0.12.0
+
+# Camera and Hardware Support
+depthai>=2.17.0        # OAK-D camera support
+pyserial>=3.5          # Serial communication for hardware control
+pymodbus>=2.5.3        # Industrial communication protocols
+
+# YOLO and Object Detection
+ultralytics>=8.0.0     # YOLOv8 support
+supervision>=0.3.0     # Detection utilities
+
+# Image Processing and Utilities
+Pillow>=8.3.0
+imageio>=2.9.0
+tqdm>=4.62.0
+
+# Data Analysis and Statistics
+statsmodels>=0.12.0
+seaborn>=0.11.0
+
+# Network and Communication
+requests>=2.25.0
+websockets>=10.0
+paho-mqtt>=1.5.1
+
+# Configuration and Logging
+pyyaml>=5.4.0
+colorama>=0.4.4
+python-dotenv>=0.19.0
+
+# Development and Testing
+pytest>=6.2.0
+pytest-cov>=2.12.0
+black>=21.0.0
+flake8>=3.9.0
+mypy>=0.910
+
+# Optional Performance Libraries
+# Uncomment if using specific hardware acceleration
+# cupy-cuda11x>=9.0.0     # CUDA acceleration for NumPy operations
+# tensorrt>=8.0.0         # NVIDIA TensorRT for optimized inference
+# onnx>=1.10.0           # ONNX model format support
+# onnxruntime-gpu>=1.8.0  # ONNX runtime with GPU support
+
+# Robot Control Libraries (LeRobot/SO-ARM101)
+# Note: These may need to be installed from source or specific repositories
+# lerobot                 # LeRobot framework
+# so-arm-sdk             # SO-ARM101 SDK (if available)
+
+# ROS2 Python Dependencies (typically installed with ROS2)
+# These are usually available through rosdep
+# rclpy
+# std-msgs
+# sensor-msgs
+# geometry-msgs
+# trajectory-msgs
+# control-msgs
+# vision-msgs
+# cv-bridge
+# tf2-ros
+# tf2-geometry-msgs
+# image-transport
+# compressed-image-transport
+
+# System Dependencies (install via apt/package manager)
+# libopencv-dev
+# libeigen3-dev
+# libpcl-dev
+# ros-humble-desktop-full  # or appropriate ROS2 distribution
