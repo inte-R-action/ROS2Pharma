@@ -2,9 +2,6 @@
 """
 Complete System Launch File for ROS2 Pharmaceutical IV Bag Vision System
 
-This launch file orchestrates the entire contamination-aware robotic manipulation
-system including vision processing, contamination analysis, and dual robot control.
-
 Launch with:
     ros2 launch ros2_pharma_iv_vision complete_system.launch.py
 
