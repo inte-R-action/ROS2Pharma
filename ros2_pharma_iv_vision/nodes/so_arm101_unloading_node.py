@@ -1,17 +1,6 @@
 #!/usr/bin/env python3
 """
-SO-ARM101 Unloading/Sorting Robot Node with Contamination-Aware Routing
-
-This node implements contamination-aware IV bag unloading and sorting operations using the 
-SO-ARM101 robot arm with intelligent routing based on contamination analysis results.
-
-Features:
-- Contamination-aware sorting with multiple destination containers
-- ACT policy integration for learned sorting behaviors
-- Eye-in-hand OAK-D camera for precise manipulation guidance
-- Isolation protocols for contaminated bags
-- Real-time safety monitoring and gentle handling
-- Statistical tracking and quality assurance logging
+SO-ARM101 Unloading/Sorting Robot Node
 
 Copyright 2025 inte-R-action Team
 
@@ -108,16 +97,7 @@ class SortingState:
 
 class SOArm101UnloadingNode(Node):
     """
-    Advanced SO-ARM101 unloading/sorting robot node with contamination-aware routing.
-    
-    Implements intelligent IV bag sorting with:
-    - Contamination-aware destination routing
-    - ACT policy integration for learned sorting behaviors
-    - Eye-in-hand OAK-D camera for precise manipulation
-    - Isolation protocols for contaminated materials
-    - Real-time safety monitoring and compliance tracking
-    - Statistical analysis and quality assurance reporting
-    """
+    Advanced SO-ARM101 unloading/sorting robot node
     
     def __init__(self):
         super().__init__('so_arm101_unloading_node')
