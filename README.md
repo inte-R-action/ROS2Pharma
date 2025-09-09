@@ -6,112 +6,28 @@
 
 **Intelligent IV Bag Inspection with Continuous Learning ROS2-Based Architecture**
 
-A comprehensive ROS2-based system for pharmaceutical quality control featuring contamination-aware robotic manipulation with adaptive learning capabilities.
-
 ## 🎯 Overview
 
 This system implements a sophisticated pharmaceutical quality control solution with:
 
-- **96.2% contamination detection accuracy** using EfficientDet + Transformer tracking
-- **Dual SO-ARM101 robot integration** with ACT policies for adaptive manipulation  
-- **Real-time contamination-aware workflow** with 30 FPS processing
-- **Imitation learning** with 94.7% expert performance retention
-- **EU GMP Annex 1 compliance framework** for sterile manufacturing
-- **Distributed node architecture** for scalable pharmaceutical automation
+- **96.2% contamination detection accuracy** using EfficientDet
+- TBC
 
 ## 🏗️ System Architecture
-
-```mermaid
-flowchart LR
-    %% Input/Control Nodes
-    subgraph INPUT ["🔧 INPUT & CONTROL"]
-        LOAD_SYS["/loading_system_node<br/>🔄 IV Bag Coordination"]
-        GCODE["/gcode_control_node<br/>⚙️ Stepper Motor Control"]
-        LOAD_ARM["/so_arm101_loading_node<br/>🤖 Loading Operations<br/>ACT Policy + Eye-in-Hand OAK-D"]
-    end
-    
-    %% Core Vision Processing
-    subgraph VISION ["🔍 VISION PROCESSING"]
-        VISION_NODE["/vision_system_node<br/>EfficientDet + Transformer Tracker<br/>30 FPS GPU Processing"]
-    end
-    
-    %% Analysis and Decision Making
-    subgraph ANALYSIS ["🧪 CONTAMINATION ANALYSIS"]
-        CONTAM["/contamination_analysis_node<br/>ACCEPT/REJECT/REVIEW<br/>Quality Thresholds"]
-        UNLOAD_ARM["/so_arm101_unloading_node<br/>🤖 Unloading/Sorting<br/>Contamination-Aware Routing"]
-    end
-    
-    %% Monitoring and Visualization
-    subgraph MONITOR ["📊 MONITORING & VISUALIZATION"]
-        PERF["/performance_monitor<br/>📈 Real-time Metrics"]
-        VIZ["/vision_system_visualizer<br/>📺 Live Feed Display"]
-    end
-    
-    %% Topics - Position and Status
-    LOAD_SYS --> |"/current_position"| VISION_NODE
-    GCODE --> |"/analysis_active"| VISION_NODE
-    
-    %% Topics - Vision Metrics
-    VISION_NODE --> |"/vision_metrics/detection_confidence"| CONTAM
-    VISION_NODE --> |"/vision_metrics/bubble_count"| CONTAM
-    VISION_NODE --> |"/vision_metrics/particle_count"| CONTAM
-    
-    %% Topics - Performance Data
-    VISION_NODE --> |"/vision_system/processing_fps"| PERF
-    VISION_NODE --> |"/vision_system/display_fps"| PERF
-    VISION_NODE --> |"/vision_system/processing_time"| PERF
-    
-    %% Topics - Visualization
-    VISION_NODE --> |"/vision_system/processed_image"| VIZ
-    
-    %% Topics - Contamination-Aware Commands
-    CONTAM --> |"/contamination_feedback/loading_commands"| LOAD_ARM
-    CONTAM --> |"/contamination_feedback/sorting_commands"| UNLOAD_ARM
-    
-    %% Topics - Robotic Feedback
-    LOAD_ARM --> |"/loading_arm/joint_states<br/>/loading_arm/safety_status"| PERF
-    UNLOAD_ARM --> |"/unloading_arm/joint_states<br/>/unloading_arm/sorting_decisions"| PERF
-    
-    %% Visual Feedback Loop
-    LOAD_ARM --> |"/loading_arm/visual_feedback"| VISION_NODE
-    UNLOAD_ARM --> |"/unloading_arm/visual_feedback"| VISION_NODE
-```
 
 ## 🚀 Key Features
 
 ### Advanced Computer Vision
-- **EfficientDet Object Detection**: High-accuracy particle and bubble detection
-- **Transformer-based Tracking**: Continuous contamination monitoring
-- **Real-time Processing**: 30 FPS with GPU acceleration
-- **OAK-D Stereo Vision**: Depth-aware contamination analysis
 
 ### Robotic Manipulation
-- **Dual SO-ARM101 Integration**: Coordinated loading and unloading operations
-- **ACT Policy Learning**: Action Chunking with Transformers for adaptive behavior
-- **Eye-in-hand Vision**: Precise manipulation guidance
-- **Force Feedback**: Gentle handling of deformable IV bags
 
 ### Quality Control
-- **Statistical Validation**: 95% confidence intervals for decision making
-- **Contamination Classification**: Multi-level contamination assessment
-- **Compliance Framework**: EU GMP Annex 1 and USP <1790> alignment
-- **Real-time Decision Support**: ACCEPT/REJECT/REVIEW recommendations
 
 ### Performance Metrics
-- **Detection Accuracy**: 96.2% contamination detection accuracy
-- **Manipulation Success**: 90% loading, 95% unloading success rates
-- **Time Efficiency**: 18.5% faster loading, 21.1% faster unloading
-- **Learning Efficiency**: 94.7% expert performance with 20 demonstrations
 
 ## 📋 Prerequisites
 
 ### Hardware Requirements
-- **NVIDIA GPU**: RTX 4090 recommended for real-time processing
-- **CPU**: Intel i9-13900K or equivalent
-- **RAM**: 64GB for multi-modal processing
-- **Robots**: Dual SO-ARM101 manipulators
-- **Cameras**: OAK-D stereo cameras (fixed + eye-in-hand)
-- **Actuator**: NEMA 17 linear actuator (±0.1mm precision)
 
 ### Software Requirements
 - **OS**: Ubuntu 22.04 LTS
@@ -313,26 +229,6 @@ so_arm101_loading:
 
 ## 📊 Performance Benchmarks
 
-### Detection Performance
-- **Contamination Detection Accuracy**: 96.2%
-- **Processing Speed**: 3.53-19.85 FPS (GPU accelerated)
-- **Detection Range**: 0.1-5mm contaminants
-- **False Positive Rate**: <3.8%
-- **False Negative Rate**: <3.8%
-
-### Manipulation Performance
-| Operation | Success Rate | Time (seconds) | vs Expert |
-|-----------|-------------|----------------|-----------|
-| Loading | 90% (95% CI: [76.9%, 100%]) | 15.0±2.8 | 18.5% faster |
-| Unloading | 95% (95% CI: [85.5%, 100%]) | 14.2±2.4 | 21.1% faster |
-| Contamination-Aware | 85% (95% CI: [69.4%, 100%]) | 16.5±3.1 | Gentle handling |
-
-### Learning Performance
-| Demonstrations | Success Rate | Improvement |
-|----------------|-------------|-------------|
-| 5 | 70% | Baseline |
-| 10 | 85% | +21.4% |
-| 20 | 92.5% | +8.8% |
 
 ## 🔧 Troubleshooting
 
@@ -474,19 +370,11 @@ pre-commit install
 ## 📚 Additional Resources
 
 ### Documentation
-- [System Architecture Guide](docs/architecture.md)
-- [API Reference](docs/api_reference.md)
-- [Configuration Guide](docs/configuration.md)
-- [Deployment Guide](docs/deployment.md)
 
 ### Research Papers
-- [Conference Paper: Contamination-Aware Robotic Manipulation](docs/papers/conference_paper.pdf)
-- [Journal Paper: Statistical Validation Framework](docs/papers/journal_paper.pdf)
 
 ### Training Materials
-- [ACT Policy Training Guide](docs/training/act_policy_training.md)
-- [Vision Model Training](docs/training/vision_model_training.md)
-- [System Calibration Procedures](docs/training/system_calibration.md)
+
 
 ## 📄 License
 

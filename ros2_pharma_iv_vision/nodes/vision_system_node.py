@@ -2,16 +2,8 @@
 """
 Advanced Vision System Node for IV Bag Contamination Detection
 
-This node implements real-time contamination detection using EfficientDet + Transformer tracking
-with GPU acceleration and optimized performance for pharmaceutical quality control.
-
 Features:
 - 96.2% contamination detection accuracy
-- 30 FPS real-time processing with GPU acceleration
-- Transformer-based particle tracking
-- OAK-D stereo camera support
-- Real-time performance metrics
-- Contamination-aware workflow integration
 
 Copyright 2025 inte-R-action Team
 
@@ -172,12 +164,6 @@ class VisionSystemNode(Node):
     """
     Advanced ROS2 Vision System Node for pharmaceutical quality control.
     
-    Implements real-time contamination detection with:
-    - EfficientDet object detection (96.2% accuracy)
-    - Transformer-based particle tracking
-    - GPU acceleration and optimization
-    - Real-time performance monitoring
-    - Contamination-aware workflow integration
     """
     
     def __init__(self):

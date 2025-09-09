@@ -2,16 +2,7 @@
 """
 SO-ARM101 Loading Robot Node with ACT Policy Integration
 
-This node implements contamination-aware IV bag loading operations using the SO-ARM101
-robot arm with Action Chunking with Transformers (ACT) policies for adaptive manipulation.
-
 Features:
-- ACT policy integration for learned manipulation behaviors
-- Eye-in-hand OAK-D camera for visual feedback
-- Contamination-aware loading strategies
-- Real-time safety monitoring and collision avoidance
-- Force feedback integration for gentle IV bag handling
-- 94.7% expert performance retention with 20 demonstrations
 
 Copyright 2025 inte-R-action Team
 
@@ -87,13 +78,7 @@ class LoadingState:
 class SOArm101LoadingNode(Node):
     """
     Advanced SO-ARM101 loading robot node with ACT policy integration.
-    
-    Implements contamination-aware IV bag loading with:
-    - ACT (Action Chunking with Transformers) policy execution
-    - Eye-in-hand OAK-D camera for visual guidance
-    - Real-time safety monitoring and force feedback
-    - Adaptive manipulation strategies based on contamination status
-    - Performance tracking and continuous learning
+
     """
     
     def __init__(self):

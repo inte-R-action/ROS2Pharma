@@ -1,9 +1,6 @@
 """
 ROS2 Pharmaceutical IV Bag Vision System
 
-A comprehensive ROS2-based architecture for intelligent IV bag inspection 
-with contamination-aware robotic manipulation and adaptive learning capabilities.
-
 Author: inte-R-action Team
 License: Apache-2.0
 Version: 1.0.0

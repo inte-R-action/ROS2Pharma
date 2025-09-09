@@ -6,12 +6,6 @@ This node implements sophisticated contamination analysis with statistical valid
 adaptive thresholds, and comprehensive quality metrics for pharmaceutical manufacturing.
 
 Features:
-- Statistical contamination assessment with confidence intervals
-- Adaptive threshold management based on environmental conditions
-- Multi-modal analysis (particles, bubbles, aggregation patterns)
-- EU GMP Annex 1 compliance framework
-- Real-time decision support (ACCEPT/REJECT/REVIEW)
-- Performance analytics and batch reporting
 
 Copyright 2025 inte-R-action Team
 
@@ -83,13 +77,7 @@ class AnalysisResult:
 class ContaminationAnalysisNode(Node):
     """
     Advanced contamination analysis node with statistical validation.
-    
-    Implements comprehensive quality control analysis including:
-    - Real-time contamination detection and classification
-    - Statistical significance testing with confidence intervals
-    - Adaptive threshold management for environmental conditions
-    - Quality risk assessment and decision support
-    - Batch analysis and compliance reporting
+
     """
     
     def __init__(self):
