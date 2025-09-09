@@ -6,8 +6,6 @@
 
 **Intelligent IV Bag Inspection with Continuous Learning ROS2-Based Architecture**
 
-A comprehensive ROS2-based system for pharmaceutical quality control featuring a robotic manipulation with adaptive learning capabilities.
-
 ## 🎯 Overview
 
 This system implements a sophisticated pharmaceutical quality control solution with:
