@@ -4,9 +4,10 @@ type: software
 authors:
   - family-names: "Tronco Jurado"
     given-names: "Ulises"
-    email: "utj20@bath.ac.uk, umh21@bath.ac.uk"
+    email: "utj20@bath.ac.uk"
     family-names: "Martinez-Hernandez"
     given-names: "Uriel"
+    email: "umh21@bath.ac.uk"
     affiliation: "Multimodal inte-R-action lab, Department of Electronic and Electrical Engineering, Faculty of Engineering and Design, University of Bath, Claverton Down, Bath, BA2 7AY, UK"
     website: "https://github.com/inte-R-action"
 title: "ROS2 Pharmaceutical IV Bag Vision System - Research-Software"
