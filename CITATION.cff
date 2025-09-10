@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 type: software
 authors:
-    family-names: "Tronco Jurado"
+  - family-names: "Tronco Jurado"
     given-names: "Ulises"
     email: "utj20@bath.ac.uk, umh21@bath.ac.uk"
     family-names: "Martinez-Hernandez"
